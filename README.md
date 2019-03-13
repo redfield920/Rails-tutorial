@@ -28,5 +28,5 @@ Things you may want to cover:
   
   postテーブル
     モデル名:task
-    カラム・データ型:id(string), task_name(text), content(text), task_status()
+    カラム・データ型:id(string), task_name(text), content(text), task_status(text), created_at(string), updated_at(string)
   
