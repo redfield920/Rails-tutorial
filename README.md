@@ -21,4 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* database model
+  user テーブル
+    モデル名:user
+    カラム・データ型:id(string), user_name(text), email(text), password(text), created_at(string), updated_at(string)
+  
+  postテーブル
+    モデル名:task
+    カラム・データ型:id(string), task_name(text), content(text), task_status()
+  
