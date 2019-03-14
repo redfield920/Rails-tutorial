@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/assets/stylesheets/show.scss">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title">
+        <h2>TaskManegement</h2>
+      </div>
+      <div class="header-index">
+        <ul>
+          <li>投稿詳細</li>
+        </ul>
+      </div>
+    </div>
+    <div class="task-show-item">
+      <%= @task.content%>
+      <div class="post-time">
+        <%= @task.created_at%>
+      </div>
+    </div>
