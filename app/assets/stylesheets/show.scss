@@ -1,0 +1,22 @@
+.header {
+  height: 100px;
+  background-color: #87cefa;
+}
+.header-title{
+  color: white;
+  font-size: 32px;
+  font-family: sans-serif;
+
+}
+.header-title h2 {
+  margin-top: 0;
+}
+li {
+  list-style: none;
+}
+.task-show-item {
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px #d3d3d3;
+  margin: 40px auto;
+  width: 60%;
+}
