@@ -5,9 +5,9 @@
       </ul>
     </div>
     <div class="task-show-item">
-      <%= @task.content%>
+      <%= @task.content %>
       <div class="post-time">
-        <%= @task.created_at%>
-        <%= link_to("編集", "/tasks/#{@task.id}/edit")%>
+        <%= @task.created_at %>
+        <%= link_to "編集", edit_task_path(@task) %>
       </div>
     </div>
