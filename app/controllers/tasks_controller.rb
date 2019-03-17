@@ -26,5 +26,5 @@ class TasksController < ApplicationController
        flash[:notice] = "タスクを編集しました"
        redirect_to("/tasks")
     end
-  end
+  end 
 end
