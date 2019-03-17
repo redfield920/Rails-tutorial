@@ -13,12 +13,12 @@
       <div class="header-title">
         <h2>TaskManegement</h2>
       </div>
-      <div class="header-index">
-        <ul>
-          <li>投稿一覧</li>
-        </ul>
-      </div>
     </div>
+  <%if flash[:notice]%>
+    <div class="flash">
+      <%= flash[:notice]%>
+    </div>
+  <% end %>
     <footer>
     </footer>
     <%= yield %>
