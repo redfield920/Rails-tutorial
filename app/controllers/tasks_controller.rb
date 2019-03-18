@@ -16,7 +16,7 @@ class TasksController < ApplicationController
     @task = Task.new(content: params[:content])
     if @task.save
       flash[:notice] = "タスクを登録しました"
-      redirect_to("/")
+      redirect_to("/tasks")
     end
   end
 
@@ -35,7 +35,7 @@ class TasksController < ApplicationController
   def destroy
     @task = Task.find(params[:id])
     if @task.destroy
-      flash[:notice] = "タスク「を削除しました。"
+      flash[:notice] = "タスクを削除しました。"
       redirect_to("/tasks")
     end
   end

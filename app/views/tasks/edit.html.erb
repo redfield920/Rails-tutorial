@@ -1,0 +1,9 @@
+<%= form_for @task do |f| %>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :content %>
+  </div>
+  <div name= "content" class="action">
+    <%= f.submit %>
+  </div>
+<% end %>
