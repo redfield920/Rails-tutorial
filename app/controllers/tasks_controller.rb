@@ -17,6 +17,8 @@ class TasksController < ApplicationController
     if @task.save
       flash[:notice] = "タスクを登録しました"
       redirect_to("/tasks")
+    else
+      render :new
     end
   end
 
@@ -37,9 +39,10 @@ class TasksController < ApplicationController
     if @task.destroy
       flash[:notice] = "タスクを削除しました。"
       redirect_to("/tasks")
+    else
+      render :edit
     end
   end
-
   private
 
   def task_params
