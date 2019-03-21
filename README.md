@@ -32,7 +32,7 @@ Things you may want to cover:
   
 ### デプロイ方法
 * このアプリではHerokuを使用
-  ＊ Heroku Toolbeltをインストール
+ ＊ Heroku Toolbeltをインストール
   > #ターミナル
    cd アップロードしたいアプリのディレクトリ名
    #herokuにログインするためのコマンド
