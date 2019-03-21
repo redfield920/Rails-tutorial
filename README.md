@@ -30,3 +30,15 @@ Things you may want to cover:
     モデル名:task
     カラム・データ型:id(string), task_name(text), content(text), task_status(text), created_at(string), updated_at(string)
   
+### デプロイ方法
+* このアプリではHerokuを使用
+  ＊ Heroku Toolbeltをインストール
+  > #ターミナル
+   cd アップロードしたいアプリのディレクトリ名
+   #herokuにログインするためのコマンド
+   heroku login
+* Herokuにログインする用のメアドとパスワードを入力
+* Herokuのサーバと紐付けするためのコマンド
+ > heroku git:remote -a abetestapp
+* git push heroku master
+* 発行されたURLをブラウザに入力
