@@ -39,6 +39,6 @@ Things you may want to cover:
    heroku login
 * Herokuにログインする用のメアドとパスワードを入力
 * Herokuのサーバと紐付けするためのコマンド
- > heroku git:remote -a abetestapp
+  > heroku git:remote -a abetestapp
 * git push heroku master
 * 発行されたURLをブラウザに入力
