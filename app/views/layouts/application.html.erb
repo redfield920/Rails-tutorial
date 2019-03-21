@@ -14,15 +14,7 @@
         <h2>TaskManegement</h2>
       </div>
     </div>
-  <% if @task.errors.any? %>
-    <div id="error_explanation" class="alert alert-danger">
-        <ul>
-        <% @task.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  
   <%if flash[:notice]%>
     <div class="flash">
       <%= flash[:notice]%>
