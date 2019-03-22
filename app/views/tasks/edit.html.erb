@@ -1,18 +1,19 @@
-<% if @task.errors.any? %>
-  <div id="error_explanation" class="alert alert-danger">
-      <ul>
-      <% @task.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+
 
 <%= form_for @task do |f| %>
   <div class="field">
     <%= f.label :description %>
     <%= f.text_field :content %>
   </div>
+  <% if @task.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+        <ul>
+        <% @task.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <div name= "content" class="action">
     <%= f.submit %>
   </div>
