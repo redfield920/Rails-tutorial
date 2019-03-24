@@ -7,7 +7,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-
+gem "actionview", ">= 5.1.6.2"
 ruby '2.6.1'
 # Use mysql as the database for Active Record
 gem 'mysql2'
